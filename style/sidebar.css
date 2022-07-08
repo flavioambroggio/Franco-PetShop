@@ -1,0 +1,294 @@
+.sticky-button{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-toggle{
+    z-index: 10;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    top: 90%;
+    left: 90%;
+    transition: 0.5s;
+    border-radius: 50%;
+    /* border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid; 
+    border-bottom: 1px solid;  */
+    border-color: black;
+    padding-top: 0.6rem;
+    padding-left: 0.8rem;
+    font-size: 20px;
+    box-shadow: 0 1px 4px 0;
+}
+
+.container{
+    margin-top: 1%;
+}
+
+.content{
+    width: 500px;
+    height: 500px;
+}
+
+.sidebar{
+    z-index: 200000;
+    display: block;
+    position: fixed;
+    left: 100%;
+}
+.swal2-container{
+    z-index: 999999999999 !important;
+}
+.sidebar-text{
+    text-align: center;
+}
+
+.sidebar-background{
+    z-index: 10;
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+
+.sidebar-div{
+    width: 100%;
+}
+
+.price{
+    /* color: #008e8e; */
+    color: #d54a09;
+    text-shadow: 0px 0px 4px rgba(213, 144, 113, 0.905);
+    font-weight: bold;
+}
+
+.sidebar-top{
+    height: 8%;
+    /* background-color: #027a7a; */
+    background-color: #2e312f;
+
+
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding-top: 3%;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid; 
+    border-color: black;
+}
+
+.sidebar-content{
+    height: 56%;
+    padding-top: 1%;
+    overflow-y: scroll;
+    /* background-color: #c7cdc9; */
+    /* background-color: #dfc3a6; */
+    background-color: #e3b787;
+
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid; 
+    border-bottom: 1px solid;
+}
+
+.sidebar-bottom{
+    width: 100%; /* Can be in percentage also. */
+    height: 36%;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    border-left: 1px solid;
+    border-right: 1px solid; 
+    border-bottom: 1px solid;
+    background-color: white;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url('../assets/stacked-waves-haikei\ \(1\).png');
+
+}
+
+.sidebar-bottom-item{
+    width: 100%;
+    padding-top: 1%;
+}
+
+.sidebar-background-active{
+    left: 70.56%;
+}
+
+.sidebar-active{
+    left: 0%;
+}
+
+.sidebar-toggle-active{
+    left: 65%;
+}
+
+.btn-sidebar{
+    width: 100%;
+    border-radius: 0;
+    
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+}
+.sidebar-content-2 ul{
+    padding: 0;
+}
+
+.img-square-wrapper{
+  width: 200px;
+  margin: auto;
+}
+
+.card-body-cart{
+  width: 400px;
+}
+
+ul{
+    list-style: none;
+}
+
+.quantity{
+    width: 110px;
+}
+
+.quantity a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.quantity a:hover{
+    color: black;
+}
+
+
+input[type=number]{
+    width: 36px;
+    text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+thead{
+    background-color: #dfc3a6;
+    border: none;
+}
+
+th{
+    font-weight: bold;
+    color: black;
+}
+
+td{
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.checkout-container{
+    width: 40%;
+    padding: 1%;
+}
+
+.title-container{
+    background-color: #dfc3a6;
+    text-align: center;
+    color: black;
+    width: 100%;
+    height: 10%;
+    padding-top: 1%;
+    font-weight: bold;
+}
+
+.checkout-table{
+    text-align: justify;
+}
+
+.checkout-funcs{
+    width: 100%;
+    height: 20%;
+} 
+
+.minimal{
+    margin-left: 1%;
+    background-color: #fac881;
+}
+
+.minimal:hover{
+    background-color: #e9ad59;
+}
+
+.deletedBtn{
+    color: rgb(211, 64, 64);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.deletedBtn:hover{
+    color: rgb(196, 36, 36);
+}
+
+@media (max-width: 768px){
+    .sidebar-toggle{
+        z-index: 10;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        top: 92%;
+        left: 80%;
+        transition: 0.5s;
+        border-radius: 50%;
+     
+        border-color: black;
+        padding-top: 0.6rem;
+        padding-left: 0.8rem;
+        font-size: 20px;
+        box-shadow: 0 1px 4px 0;
+    }
+
+    .checkout-container{
+        width: auto;
+    }
+
+    .sidebar-background{
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 100%;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .sidebar-background-active{
+        left: 0%;
+    }
+    
+    .sidebar-active{
+        left: 0%;
+    }
+    
+    .sidebar-toggle-active{
+        left: 25%;
+    }
+
+}
